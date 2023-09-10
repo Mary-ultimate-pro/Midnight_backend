@@ -1,6 +1,5 @@
 from app import db
-from sqls
-lalchemy.orm import relationship
+from sqlsaddedlalchemy.orm import relationship
 
 
 class Card(db.Model):
@@ -23,3 +22,12 @@ class Round(db.Model):
     number = db.Column(db.Integer)
     active_players = relationship("Player", backref="round")
     winners = relationship("Player", backref="round")
+
+
+class Game(db.Model):
+    id = db.Column(db.Integer, primary_key=True, autoincrement=True)
+    name = db.Column(db.String(50))
+    players = db.Column(db.String(50))
+    related_name = db.Column(db.integer)
+    deck = db.Column(db.integer)
+    status = db.Column(db.String(50))
