@@ -33,7 +33,7 @@ end
 # Unset irrelevant variables.
 deactivate nondestructive
 
-set -gx VIRTUAL_ENV "/home/alfreddohnani/Documents/midnight_ace/card_game"
+set -gx VIRTUAL_ENV "/home/alfreddohnani/Documents/Midnight_backend/card_game"
 
 set -gx _OLD_VIRTUAL_PATH $PATH
 set -gx PATH "$VIRTUAL_ENV/bin" $PATH

@@ -38,7 +38,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="/home/alfreddohnani/Documents/midnight_ace/card_game"
+VIRTUAL_ENV="/home/alfreddohnani/Documents/Midnight_backend/card_game"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"

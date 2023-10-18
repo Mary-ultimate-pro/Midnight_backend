@@ -275,7 +275,7 @@ def delete_game(id):
 
 
 @app.patch("/game/<id>")
-def update_player(id):
+def update_game(id):
     Game.query.filter_by(id=id).update(request.json)
     db.session.commit()
     return Game_schema.jsonify(Game.query.get(id))
@@ -356,7 +356,7 @@ def round_deck(id):
 
 
 @app.patch("/round/<id>")
-def update_deck(id):
+def update_round(id):
     round.query.filter_by(id=id).update(request.json)
     db.session.commit()
     return Round_schema.jsonify(Round.query.get(id))
